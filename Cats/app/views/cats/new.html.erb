@@ -1,17 +1,2 @@
-<form action="/cats" method='POST'>
-    <input type='text' name='name' placeholder="name">
-    <label for="color">Color</label>
-    <select id='color' name='color' placeholder="color" >
-        <% Cat.colors.each do |color|%>
-            <option value='<%= color %>'><%= color %></option>
-        <% end%>
-    </select>
-    <input type='radio' id="M" name='sex' value="M">
-        <label for="M">Male</label>
-    <input type='radio' id="F" name='sex' value="F">
-        <label for="F">Female</label>
-    <input type='textarea' name='description' placeholder="description">
-    <input type='date' name='birth_date' >
-    <input type = "submit">
-    
-</form>
+
+<%= render 'form'%>

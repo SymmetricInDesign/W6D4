@@ -14,6 +14,8 @@ class Cat < ApplicationRecord
         ((Time.zone.now - birth_date.to_time) / 1.year.seconds).floor
     end
 
-    
+   has_many :cat_rental_requests,
+        class_name: :CatRentalRequest,
+        foreign_key: :cat_id
     
 end

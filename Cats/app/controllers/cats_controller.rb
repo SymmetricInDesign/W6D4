@@ -8,6 +8,7 @@ class CatsController < ApplicationController
 
     def show
         @cat = Cat.find(params[:id])
+        @requests = CatRentalRequest.find_by(cat_id: @cat.id)
         render 'show'
     end
 
