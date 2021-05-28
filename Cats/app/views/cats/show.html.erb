@@ -6,9 +6,11 @@
     <tr><a href='<%= cats_url %>'>Show all cats</a></tr>
 </table>
 
+
 <% @requests.each do |req| %>
-<h3><%= req.id %></h3>
-<h3><%= req.start_date %></h3>
-<h3><%= req.end_date %></h3>
-<hr/>
+    <h3><%= req.id %></h3>
+    <h3><%= req.start_date %></h3>
+    <h3><%= req.end_date %></h3>
+    <hr/>
 <% end %>
+
